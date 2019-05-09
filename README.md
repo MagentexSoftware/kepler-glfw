@@ -13,6 +13,7 @@ Clone and build the module
 
 ```
 git clone --recurse-submodules -j8 https://github.com/MagentexSoftware/kepler-glfw.git
+cd kepler-glfw
 npm i
 ```
 
