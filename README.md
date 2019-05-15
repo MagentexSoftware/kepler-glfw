@@ -25,7 +25,7 @@ npm i
 
 To use the package as a part of a native module, you'll need to include it in your `binding.gyp` file.
 
-```js
+```py
 {
   'targets': [
     {
@@ -46,4 +46,3 @@ To use the package as a part of a native module, you'll need to include it in yo
 ## License
 
 This project is licensed under the ZLib License - see the [LICENSE.md](LICENSE.md) file for details
-
