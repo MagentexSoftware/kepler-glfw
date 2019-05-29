@@ -2,6 +2,7 @@
   'targets': [
     {
       'target_name': 'kepler-glfw-native',
+      'type': 'shared_library',
       'sources': [
         "glfw/src/context.c",
         "glfw/src/init.c",
@@ -22,9 +23,11 @@
               "glfw/src/posix_thread.c",
               "glfw/src/glx_context.c",
               "glfw/src/egl_context.c",
-              "glfw/src/osmesa_context.c"
+              "glfw/src/osmesa_context.c",
+              "glfw/src/linux_joystick.c"
           ],
-          "defines": [ "_GLFW_X11" ]
+          "defines": [ "_GLFW_X11" ],
+          "libraries": [ "-lX11" ]
         }],
         ["OS=='mac'", {
           "sources": [
